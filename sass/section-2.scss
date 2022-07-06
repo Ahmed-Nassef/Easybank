@@ -1,0 +1,50 @@
+@import 'variables.scss';
+#section-2{
+  max-width: 100%;
+
+  .section2-wrapper{
+    padding: 5rem;
+    background: $Light-Grayish-Blue;
+
+    .section2-content{
+
+      .boxes-header{
+        margin-bottom: 2rem;
+        font-weight: 300;
+        h2{
+          color: $Dark-Blue;
+          font-size: 2.441rem;
+          font-weight: 300;
+          margin-bottom: 1rem;
+        }
+        p{
+          color: $Grayish-Blue;
+        }        
+      }
+
+      .boxes-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .box{
+          padding: 1rem;
+          font-weight: 300;
+
+          img{
+            margin-bottom: 1.5rem;
+          }
+          h3{
+            margin-bottom: 1.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            color: $Dark-Blue;
+          }
+          p{
+            color: $Grayish-Blue;
+          }
+        }
+      }
+    }
+  }
+}
