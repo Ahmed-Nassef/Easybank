@@ -2,31 +2,41 @@
 
 #section-1{
   max-width: 100%;
-
   nav{
     .nav-content{
       display: flex;
       align-items: center;
-      padding: 1rem 5rem;
-      justify-content: space-around;
+      padding: 0 5rem;
+      justify-content: space-between;
       background-color: $White;
       text-transform: capitalize;
+      z-index: 8;
 
       .links{
         display: flex;
         align-items: center;
         list-style: none;
 
+        .margin{
+          margin-left: 2rem;
+        }
         li{
-          margin-left: 1.5rem;
-
+          padding: 2rem 0;
           a{
             color: $Grayish-Blue;
           }
+          
         }
       }
       
     }
+    
+  }
+  .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
   }
   #invite{
     color: $White;
@@ -37,25 +47,26 @@
   // hero section
 
   .hero-wrapper{
-    height: 100vh;
-    // border: 2px solid red;
-    padding: 3rem;
-    background: $Very-Light-Gray;
+  
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: $Very-Light-Gray;
   }
 
-  .hero-content{
-    // border: 2px solid blue;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-
+    .hero-img{
+      height: 100vh;
+      max-height: 100%;
+      background-image: url(../images/image-mockups.png),url(../images/backgrounds/bg-intro-desktop.svg);
+      background-position: 100px 85% ,25% -150px;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .hero-header{
+      margin: 5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 2rem;
 
       h1{
         font-size: 3.052rem;
@@ -70,12 +81,5 @@
       #invite{
         width: fit-content;
       }
-    }
-    .hero-img{
-      background-image:url(../images/backgrounds/bg-intro-desktop.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      // background-position: 170% -80px,50px -100%;
-      background-position:10% 80%;
     }
   }
